@@ -4,38 +4,38 @@ const services = [
   {
     icon: Book,
     title: 'Professional Binding',
-    description: 'Spiral, comb, perfect, and case binding for documents, books, and reports with precision finishing.',
-    price: 'Starting from ₹50',
+    description:
+      'Spiral, comb, perfect, and case binding for documents, books, and reports with precision finishing.',
   },
   {
     icon: Layers,
     title: 'Lamination Services',
-    description: 'Hot and cold lamination in various sizes and finishes. Protect and enhance your printed materials.',
-    price: 'Starting from ₹30',
+    description:
+      'Hot and cold lamination in various sizes and finishes. Protect and enhance your printed materials.',
   },
   {
     icon: Sparkles,
     title: 'Foiling & Embossing',
-    description: 'Add premium gold, silver, or custom foiling to business cards, invitations, and certificates.',
-    price: 'Starting from ₹200',
+    description:
+      'Add premium gold, silver, or custom foiling to business cards, invitations, and certificates.',
   },
   {
     icon: Scissors,
     title: 'Die-Cutting',
-    description: 'Custom shapes and designs for packaging, labels, and promotional materials with precision cutting.',
-    price: 'Starting from ₹100',
+    description:
+      'Custom shapes and designs for packaging, labels, and promotional materials with precision cutting.',
   },
   {
     icon: Package,
     title: 'Custom Packaging',
-    description: 'Professional box-making, folder creation, and custom packaging solutions for businesses.',
-    price: 'Custom Quote',
+    description:
+      'Professional box-making, folder creation, and custom packaging solutions for businesses.',
   },
   {
     icon: PenTool,
     title: 'Finishing Services',
-    description: 'Scoring, perforating, corner rounding, and other specialty finishing for perfect results.',
-    price: 'Starting from ₹80',
+    description:
+      'Scoring, perforating, corner rounding, and other specialty finishing for perfect results.',
   },
 ];
 
@@ -72,15 +72,9 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 font-body mb-4 leading-relaxed">
+                <p className="text-gray-600 font-body mb-0 leading-relaxed">
                   {service.description}
                 </p>
-
-                <div className="pt-4 border-t border-gray-200">
-                  <span className="inline-block px-3 py-1 bg-brand-gold/10 text-brand-gold text-sm font-semibold rounded-full">
-                    {service.price}
-                  </span>
-                </div>
               </div>
             );
           })}

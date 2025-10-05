@@ -41,7 +41,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-bold text-brand-gold mb-1">15+</div>
             <div className="text-sm text-gray-400 font-body">Years Experience</div>
@@ -53,10 +53,6 @@ export default function Hero() {
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-bold text-brand-gold mb-1">200+</div>
             <div className="text-sm text-gray-400 font-body">Business Partners</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-bold text-brand-gold mb-1">24hr</div>
-            <div className="text-sm text-gray-400 font-body">Turnaround Time</div>
           </div>
         </div>
       </div>

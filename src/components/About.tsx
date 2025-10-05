@@ -1,4 +1,4 @@
-import { Award, Users, MapPin, Clock } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 export default function About() {
   return (

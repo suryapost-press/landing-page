@@ -43,49 +43,7 @@ export default function About() {
                 educational institutions, and individuals throughout Kerala who trust us for reliable service
                 and competitive pricing.
               </p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center">
-                  <Award className="w-6 h-6 text-brand-gold" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white mb-1">15+ Years</div>
-                  <div className="text-sm text-gray-400">Industry Experience</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center">
-                  <Users className="w-6 h-6 text-brand-gold" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white mb-1">5000+</div>
-                  <div className="text-sm text-gray-400">Happy Customers</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-brand-gold" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white mb-1">Local</div>
-                  <div className="text-sm text-gray-400">Kochi-Based Service</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-brand-gold" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white mb-1">Same Day</div>
-                  <div className="text-sm text-gray-400">Service Available</div>
-                </div>
-              </div>
-            </div>
+            </div>  
           </div>
         </div>
       </div>

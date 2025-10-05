@@ -4,6 +4,7 @@ import { Menu, X, Phone } from 'lucide-react';
 const LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Services', href: '#services' },
+  { label: 'Products', href: '#products' },
   { label: 'About', href: '#about' },     // Make sure About.tsx has id="about"
   { label: 'Why Us', href: '#trust' },     // Make sure Trust.tsx has id="trust"
   { label: 'Contact', href: '#contact' },

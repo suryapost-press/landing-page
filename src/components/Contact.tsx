@@ -15,15 +15,27 @@ export default function Contact() {
 
         <div className="space-y-8 lg:space-y-10">
           {/* Google Map (Top) */}
-          <div className="bg-gray-200 rounded-2xl overflow-hidden h-80 sm:h-96">
-            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-300 to-gray-200">
-              <div className="text-center text-gray-600">
-                <MapPin className="w-12 h-12 mx-auto mb-2 text-gray-500" />
-                <p className="font-body">Google Maps Integration</p>
-                <p className="text-sm text-gray-500 mt-1">MG Road, Kochi, Kerala</p>
-              </div>
-            </div>
-          </div>
+<div className="relative rounded-2xl overflow-hidden h-80 sm:h-96 bg-gray-200">
+  {/* Embedded map (approximate query) */}
+  <iframe
+    className="absolute inset-0 w-full h-full border-0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.5808946913551!2d76.27713812311157!3d9.992529528635162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d5dd157df7b%3A0xe70ef53ead2fb408!2sKhadeeja%20Building%2C%2068%2F2007%2C%20Mathai%20Manjooran%20Rd%2C%20Ayyappankavu%2C%20Kochi%2C%20Ernakulam%2C%20Kerala%20682018!5e0!3m2!1sen!2sin!4v1759650537123!5m2!1sen!2sin"
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    allowFullScreen
+  />
+
+  {/* Button to open your exact pin in Google Maps */}
+  <a
+    href="https://maps.app.goo.gl/ykEFo6fm9gQGZmyV6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-2 rounded-lg bg-white/90 px-3 py-2 text-xs font-medium text-brand-charcoal shadow hover:bg-white"
+  >
+    <MapPin className="w-4 h-4 text-brand-gold" />
+    View on Google Maps
+  </a>
+</div>
 
           {/* Contact Information (Below Map) */}
           <div className="bg-gradient-to-br from-brand-charcoal to-brand-dark rounded-2xl p-8 md:p-10 text-white">

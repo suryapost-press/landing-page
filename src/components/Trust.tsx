@@ -23,7 +23,7 @@ const valueProps = [
 
 export default function Trust() {
   return (
-    <section className="py-24 bg-brand-light" aria-labelledby="trust-heading">
+    <section id="trust" className="py-24 bg-brand-light" aria-labelledby="trust-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-14">

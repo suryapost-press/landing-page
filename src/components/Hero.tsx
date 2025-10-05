@@ -2,7 +2,7 @@ import { Phone } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-brand-charcoal via-brand-dark to-brand-charcoal overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-brand-charcoal via-brand-dark to-brand-charcoal overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute inset-0"

@@ -1,27 +1,48 @@
-import { CalendarDays, NotebookPen, Wallet, Gift } from 'lucide-react';
+// src/components/Products.tsx
 
-const products = [
+// Local product images
+import calendarImg from '../assets/products/table-calendar.jpg';
+import diaryImg from '../assets/products/diary.jpg';
+import passbookImg from '../assets/products/passbook.jpg';
+import giftBoxImg from '../assets/products/gift-box.jpg';
+
+type Product = {
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+};
+
+const products: Product[] = [
   {
-    icon: CalendarDays,
     title: 'Custom Table Calendars',
-    description: 'Branded desk/table calendars with your logo, colors, and key dates. Perfect for client gifting.',
+    description:
+      'Branded desk/table calendars with your logo, colors, and key dates. Perfect for client gifting.',
+    image: calendarImg,
+    alt: 'Custom table calendar on a desk',
   },
   {
-    icon: NotebookPen,
     title: 'Personalized Diaries',
-    description: 'Durable diaries with custom covers, foil branding, and page inserts for teams or events.',
+    description:
+      'Durable diaries with custom covers, foil branding, and page inserts for teams or events.',
+    image: diaryImg,
+    alt: 'Personalized diaries with custom covers',
   },
   {
-    icon: Wallet,
     title: 'Bank Passbooks',
-    description: 'High-quality custom passbooks for banks and co-operatives with secure, accurate finishing.',
+    description:
+      'High-quality custom passbooks for banks and co-operatives with secure, accurate finishing.',
+    image: passbookImg,
+    alt: 'Custom bank passbook sample',
   },
   {
-    icon: Gift,
     title: 'Premium Gift Boxes',
-    description: 'Rigid or foldable gift boxes with custom inserts, foiling, and specialty finishes.',
+    description:
+      'Rigid or foldable gift boxes with custom inserts, foiling, and specialty finishes.',
+    image: giftBoxImg,
+    alt: 'Premium custom gift box with insert',
   },
-] as const;
+];
 
 export default function Products() {
   return (
@@ -37,16 +58,26 @@ export default function Products() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map(({ icon: Icon, title, description }) => (
+          {products.map(({ title, description, image, alt }) => (
             <div
               key={title}
-              className="group bg-brand-light rounded-xl p-8 shadow-sm hover:shadow-brand transition-all duration-300 hover:-translate-y-1 border border-gray-200"
+              className="group bg-brand-light rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-brand transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-brand-gold/10 rounded-lg mb-6 group-hover:bg-brand-gold/20 transition-colors">
-                <Icon className="w-7 h-7 text-brand-gold" />
+              {/* Image */}
+              <div className="relative aspect-[4/3] bg-gray-100">
+                <img
+                  src={image}
+                  alt={alt}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
-              <h3 className="text-lg font-bold text-brand-charcoal mb-2">{title}</h3>
-              <p className="text-gray-600 font-body leading-relaxed">{description}</p>
+
+              {/* Content */}
+              <div className="p-6 md:p-8">
+                <h3 className="text-lg font-bold text-brand-charcoal mb-2">{title}</h3>
+                <p className="text-gray-600 font-body leading-relaxed">{description}</p>
+              </div>
             </div>
           ))}
         </div>

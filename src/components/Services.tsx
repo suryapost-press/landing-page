@@ -1,5 +1,3 @@
-import { Book, Layers, Sparkles, Scissors, Package, PenTool } from 'lucide-react';
-
 // Local images (update paths/names if yours differ)
 import bindingImg from '../assets/services/binding.jpg';
 import laminationImg from '../assets/services/lamination.jpg';
@@ -9,7 +7,6 @@ import packagingImg from '../assets/services/custom-packaging.jpg';
 import finishingImg from '../assets/services/finishing.jpg';
 
 type Service = {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
   image: string;
@@ -18,7 +15,6 @@ type Service = {
 
 const services: Service[] = [
   {
-    icon: Book,
     title: 'Professional Binding',
     description:
       'Spiral, comb, perfect, and case binding for documents, books, and reports with precision finishing.',
@@ -26,7 +22,6 @@ const services: Service[] = [
     alt: 'Professional binding sample',
   },
   {
-    icon: Layers,
     title: 'Lamination Services',
     description:
       'Hot and cold lamination in various sizes and finishes. Protect and enhance your printed materials.',
@@ -34,7 +29,6 @@ const services: Service[] = [
     alt: 'Laminated print sample',
   },
   {
-    icon: Sparkles,
     title: 'Foiling & Embossing',
     description:
       'Add premium gold, silver, or custom foiling to business cards, invitations, and certificates.',
@@ -42,7 +36,6 @@ const services: Service[] = [
     alt: 'Foiling and embossing detail',
   },
   {
-    icon: Scissors,
     title: 'Die-Cutting',
     description:
       'Custom shapes and designs for packaging, labels, and promotional materials with precision cutting.',
@@ -50,7 +43,6 @@ const services: Service[] = [
     alt: 'Die-cut packaging sample',
   },
   {
-    icon: Package,
     title: 'Custom Packaging',
     description:
       'Professional box-making, folder creation, and custom packaging solutions for businesses.',
@@ -58,7 +50,6 @@ const services: Service[] = [
     alt: 'Custom packaging box',
   },
   {
-    icon: PenTool,
     title: 'Finishing Services',
     description:
       'Scoring, perforating, corner rounding, and other specialty finishing for perfect results.',
@@ -81,7 +72,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {services.map(({ icon: Icon, title, description, image, alt }) => (
+          {services.map(({ title, description, image, alt }) => (
             <div
               key={title}
               className="group bg-brand-light rounded-xl p-6 md:p-8 shadow-sm hover:shadow-brand transition-all duration-300 hover:-translate-y-1 border border-gray-200"
@@ -99,10 +90,6 @@ export default function Services() {
               </div>
 
               {/* Icon + content */}
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-brand-gold/10 rounded-lg mb-6 group-hover:bg-brand-gold/20 transition-colors">
-                <Icon className="w-7 h-7 text-brand-gold" />
-              </div>
-
               <h3 className="text-xl font-bold text-brand-charcoal mb-3">{title}</h3>
               <p className="text-gray-600 font-body mb-0 leading-relaxed">{description}</p>
             </div>

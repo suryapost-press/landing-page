@@ -1,22 +1,24 @@
-import { Award } from 'lucide-react';
+// src/components/About.tsx
+import workshopImg from '../assets/about-workshop.jpg';
 
 export default function About() {
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-brand-charcoal to-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Image on the left */}
           <div className="order-2 lg:order-1">
             <div className="relative h-96 lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-gold/20 to-brand-charcoal/40 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <Award className="w-24 h-24 mx-auto mb-4 text-brand-gold" />
-                  <p className="text-xl font-semibold">Professional Workshop</p>
-                  <p className="text-gray-300 mt-2">State-of-the-art equipment</p>
-                </div>
-              </div>
+              <img
+                src={workshopImg}
+                alt="Surya Post Press workshop"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
+          {/* Content on the right */}
           <div className="order-1 lg:order-2">
             <div className="inline-block px-4 py-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full text-brand-gold text-sm font-medium mb-6">
               About Surya Post Press
@@ -43,7 +45,7 @@ export default function About() {
                 educational institutions, and individuals throughout Kerala who trust us for reliable service
                 and competitive pricing.
               </p>
-            </div>  
+            </div>
           </div>
         </div>
       </div>

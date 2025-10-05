@@ -1,11 +1,24 @@
 import { Phone } from 'lucide-react';
+import heroBg from '../assets/hero.jpg'; // If you use path alias "@", use: import heroBg from '@/assets/hero.jpg';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-brand-charcoal via-brand-dark to-brand-charcoal overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroBg}
+          alt="Surya Post Press - Precision post-printing services in Kochi"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Black gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/85" />
+        {/* Optional subtle diagonal texture */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 opacity-5 pointer-events-none"
           style={{
             backgroundImage:
               'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.03) 35px, rgba(255,255,255,.03) 70px)',
@@ -13,6 +26,7 @@ export default function Hero() {
         />
       </div>
 
+      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center animate-fade-in">
         <div className="mb-6">
           <span className="inline-block px-4 py-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full text-brand-gold text-sm font-medium tracking-wide">

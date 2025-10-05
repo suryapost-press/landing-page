@@ -81,12 +81,12 @@ export default function Services() {
         </div>
 
         <div className="text-center">
-          <button
-            onClick={scrollToContact}
-            className="px-8 py-4 bg-brand-charcoal text-white font-semibold rounded-lg hover:bg-brand-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+          <a
+          href="tel:+917884213412"
+          className="inline-block px-8 py-4 bg-brand-charcoal text-white font-semibold rounded-lg hover:bg-brand-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"aria-label="Call +91 78842 13412"
           >
             Request Custom Quote
-          </button>
+          </a>
         </div>
       </div>
     </section>

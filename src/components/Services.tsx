@@ -40,9 +40,6 @@ const services = [
 ];
 
 export default function Services() {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section id="services" className="py-20 bg-white">
@@ -82,7 +79,7 @@ export default function Services() {
 
         <div className="text-center">
           <a
-          href="tel:+917884213412"
+          href="tel:+918281054873"
           className="inline-block px-8 py-4 bg-brand-charcoal text-white font-semibold rounded-lg hover:bg-brand-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"aria-label="Call +91 78842 13412"
           >
             Request Custom Quote

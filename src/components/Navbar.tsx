@@ -65,7 +65,7 @@ export default function Navbar() {
 
             {/* CTA */}
             <a
-              href="tel:+919876543210"
+              href="tel:+918281054873"
               className="ml-3 inline-flex items-center gap-2 rounded-lg bg-brand-gold text-brand-dark px-4 py-2 text-sm font-semibold shadow-brand-lg transition-all hover:bg-yellow-500"
             >
               <Phone className="h-4 w-4" />
@@ -103,7 +103,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="tel:+919876543210"
+                href="tel:+918281054873"
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-brand-gold text-brand-dark px-4 py-2 text-base font-semibold shadow-brand-lg transition-colors hover:bg-yellow-500"
                 onClick={() => setOpen(false)}
               >

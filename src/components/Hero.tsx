@@ -33,11 +33,11 @@ export default function Hero() {
         {/* Single centered CTA */}
         <div className="mt-10 flex justify-center items-center">
           <a
-            href="tel:+919876543210"
+            href="tel:+918281054873"
             className="group inline-flex items-center justify-center px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-lg shadow-brand-lg hover:bg-yellow-500 transition-all duration-300 gap-2 hover:scale-105"
           >
             <Phone className="w-5 h-5" />
-            Call Now: +91 98765 43210
+            Call Now: +91 82810 54873
           </a>
         </div>
 

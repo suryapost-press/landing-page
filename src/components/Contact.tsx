@@ -37,10 +37,10 @@ export default function Contact() {
                 <div>
                   <div className="font-semibold mb-1">Phone</div>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+918281054873"
                     className="text-gray-300 hover:text-brand-gold transition-colors font-body"
                   >
-                    +91 98765 43210
+                    +918281054873
                   </a>
                 </div>
               </div>
@@ -81,14 +81,14 @@ export default function Contact() {
           {/* Centered Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="tel:+919876543210"
+              href="tel:+918281054873"
               className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-brand-gold text-brand-dark font-semibold rounded-lg hover:bg-yellow-500 transition-all duration-300 shadow-md hover:shadow-lg"
             >
               <Phone className="w-5 h-5 mr-2" />
               Call Now
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918281054873"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg"
